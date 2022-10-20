@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                  <!-- Templatemo style -->
+    <title>hotelCasaBlanca</title>
+</head>
+   <H3>HOTEL CASA BLANCA</H3>
+   <img src="../dana/img/cs.jpg" alt="" height="460">
+    <p>Hotel Boutique Casa Blanca, es un hermoso hotel ubicado en Hoteles en Tejupilco de Hidalgo, Estado de México, México. </p>Conozca el hermoso Hotel Boutique Casa Blanca. Hotel Boutique Casa Blanca</p>
+    <h2>Servicios</h2>
+    <p>🚘Estacionamiento gratuito</p>
+    <p>🏊‍♀️Alberca</p>
+    <p>🌐Wifi gratis<p>Wifi en las habitaciones</p></p>
+    <p>🚭De no fumar</p>
+    <label for="">Numero de dias:</label>
+    <input id="per" type="number" >
+    <script>
+        var inputPer = document.getElementById('per');
+        inputPer.addEventListener('keyup', (event) => {
+
+            var peri = event.path[0].value;
+            let precio = (280*peri);
+            
+            document.getElementById('pre').innerHTML = "$ "+precio;
+
+        }
+        );
+    </script>
+    <span id="pre"></span>
+</div>
+</body>
+</html>

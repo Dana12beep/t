@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h3>HOTEL CITY EXPRESS JUNIOR TOLUCA AEROPUERTO</h3>
+<img src="../dana/img/city.jpg" alt="" height="460">
+<br>Este hotel moderno, situado a solo 2 km del aeropuerto de Toluca, ofrece habitaciones luminosas con aire acondicionado y conexión WiFi gratuita. Hay conexión Wi-Fi. </br>Su personal es excelente, sumamente atentos y dispuestos a apoyar en todo momento.</p>
+<h2>Servicios Destacados</h2>
+    <p>🌐Wifi en el lobby<p>Wifi en las habitaciones</p></p>
+    <p>🚭De no fumar</p>
+    <p>🍴Restaurante</p>
+    <p>🌬aire acondicionado</p>
+    <p>🛀Spa</p>
+    <label for="">Numero de dias:</label>
+    <input id="per" type="number" >
+    <br/>
+    
+    <br/>
+    <script>
+        var inputPer = document.getElementById('per');
+        inputPer.addEventListener('keyup', (event) => {
+
+            var peri = event.path[0].value;
+            let precio = (300*peri);
+            
+            document.getElementById('pre').innerHTML = "$ "+precio;
+
+        }
+        );
+    </script>
+    <span id="pre"></span>
+</body>
+</html>
